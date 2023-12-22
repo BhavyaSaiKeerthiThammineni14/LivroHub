@@ -1,4 +1,3 @@
-
 <?php
 var_dump($_POST); // This will print the POST data for debugging purposes
 //if ($_SERVER['REQUEST_METHOD'] === 'POST') {
