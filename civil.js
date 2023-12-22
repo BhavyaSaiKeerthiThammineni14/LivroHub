@@ -59,4 +59,3 @@ function handleSearch(event) {
 // Attach the handleSearch function to the form's submit event
 const searchForm = document.getElementById('searchForm');
 searchForm.addEventListener('submit', handleSearch);
-
