@@ -742,10 +742,40 @@ nav a:hover {
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-@media screen and (max-width : 600px)
-{
-  height: 1px;{
-    font-size : 30px;
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack header items vertically on small screens */
+    text-align: center; /* Center-align text in header */
   }
+
+  nav {
+    margin-top: 20px; /* Add space below the logo */
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0; /* Add vertical space between navigation links */
+  }
+
+  .title h1 {
+    margin-left: 0; /* Center-align main heading */
+  }
+
+  .book-card {
+    width: 100%; /* Make book cards take up the full width */
+  }
+}
+
+/* Media query for screens smaller than 480px (typical smartphones) */
+@media screen and (max-width: 480px) {
+  .page-title {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+  }
+
+  .book-card {
+    width: 100%; /* Make book cards take up the full width */
+  }
+
+  
 }
