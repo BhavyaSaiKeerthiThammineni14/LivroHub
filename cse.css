@@ -36,7 +36,7 @@ header {
   padding: 8px;
   width: 70%;
   border: solid;
-  border-color:#EE3E38;
+  border-color: #EE3E38;
 }
 
 button[type="submit"] {
@@ -55,17 +55,10 @@ button[type="submit"] {
   margin-top: 20px;
 }
 
-.book-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-
 .book-card {
   width: 200px;
-  height: 300px;
+  /* Remove fixed height */
+  /* height: 300px; */
   background-color: #f0f0f0;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -74,6 +67,8 @@ button[type="submit"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Allow content to grow */
+  flex-grow: 1;
 }
 
 .book-card img {
