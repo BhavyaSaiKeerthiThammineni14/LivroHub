@@ -337,20 +337,24 @@ body {
 html {
   box-sizing: border-box;
 }
+/* ... (Your existing styles) ... */
+
 .card {
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
-  background-color: white; /* Set the background color to white */
-  color: #013243; /* Set the text color for team member details */
+  background-color: white;
+  color: #013243;
   position: relative;
-  width: 100%; /* Adjust the width as needed */
-  height: 150px; /* Adjust the height as needed */
-  overflow: hidden; /* Ensure contents do not overflow */
-  transition: transform 0.5s, box-shadow 0.5s; /* Adjust timing for smoother animation */
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.5s, box-shadow 0.5s;
 }
+
 .card:hover {
-  transform: scale(1.05); /* Slightly scale up on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card:before {
@@ -379,10 +383,9 @@ html {
 
 .card .imgBox {
   width: 100%;
-  height: 60%; /* Adjust the height of the image box */
+  height: 60%;
   position: relative;
-  overflow: hidden; /* Ensure the image doesn't overflow */
-  /* ... (other existing styles for .imgBox) ... */
+  overflow: hidden;
 }
 
 .card .bark {
@@ -394,25 +397,29 @@ html {
   transition: 0.7s;
   box-shadow: 300px 200px 100px rgba(0, 0, 0, 0.4) inset;
 }
+
 .card .imgBox img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s; /* Add a transition effect for smoother image scaling */
+  transition: transform 0.5s;
 }
 
 .card:hover .imgBox img {
-  transform: scale(1.1); /* Slightly scale up the image on hover */
+  transform: scale(1.1);
 }
 
 .card:hover .bark {
   opacity: 1;
   transition: 0.6s;
 }
+
 .card .details {
-  /* ... (other existing styles for .details) ... */
+  flex-grow: 1; /* Allow the details section to grow vertically */
   padding: 15px;
 }
+
+/* ... (Your existing styles) ... */
 
 *, *:before, *:after {
   box-sizing: inherit;
