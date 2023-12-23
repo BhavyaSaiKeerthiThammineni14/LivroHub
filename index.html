@@ -176,8 +176,40 @@
     <p class="feedback-text">Thank you for your feedback!</p>
   </div>
    </section>
+<div id="feedbackContainer"></div>
 
-  
+<script>
+    function generateFeedbackMessage(feedbackType) {
+        if (feedbackType === "Happy") {
+            return "Happy Feedback - Thank You for your happy feedback. It makes us feel better and happy to give a good experience. Please contact us and give your feedback!!";
+        } else if (feedbackType === "Neutral") {
+            return "Neutral Feedback - Thanks for the average feedback. We will surely try to give a good experience. Please contact us and give your feedback!!";
+        } else if (feedbackType === "Sad") {
+            return "Sad Feedback - Thank You for the sad feedback. We are so sorry for the inconvenience. We make sure that your next visit makes you happy. Please contact us and give your feedback!!";
+        } else {
+            return "Invalid feedback type";
+        }
+    }
+
+    // Example usage:
+    var feedbackContainer = document.getElementById("feedbackContainer");
+
+    var happyMessage = generateFeedbackMessage("Happy");
+    var happyParagraph = document.createElement("p");
+    happyParagraph.textContent = happyMessage;
+    feedbackContainer.appendChild(happyParagraph);
+
+    var neutralMessage = generateFeedbackMessage("Neutral");
+    var neutralParagraph = document.createElement("p");
+    neutralParagraph.textContent = neutralMessage;
+    feedbackContainer.appendChild(neutralParagraph);
+
+    var sadMessage = generateFeedbackMessage("Sad");
+    var sadParagraph = document.createElement("p");
+    sadParagraph.textContent = sadMessage;
+    feedbackContainer.appendChild(sadParagraph);
+</script>
+
    <footer>
    <div class="footer-container">
     <div class="about-team">
