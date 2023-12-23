@@ -57,7 +57,8 @@ button[type="submit"] {
 
 .book-card {
   width: 200px;
-  height: 300px;
+  /* Remove fixed height */
+  /* height: 300px; */
   background-color: #f0f0f0;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -66,6 +67,8 @@ button[type="submit"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Allow content to grow */
+  flex-grow: 1;
 }
 
 .book-card img {
@@ -95,7 +98,6 @@ button[type="submit"] {
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: auto; /* Make the button at the bottom */
 }
 
 .book-card a:hover {
