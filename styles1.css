@@ -534,7 +534,7 @@ html {
 }
 
 .book-card a:hover {
-  background-color: #C0392B; /* Change the hover color as needed */
+  background-color: #f7f6f6; /* Change the hover color as needed */
 }
 footer {
   background-color:#EE3E38;
@@ -590,7 +590,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #C0392B;
+  color: #ffffff;
 }
 
 /* Apply the rest of your styles here */
@@ -658,7 +658,7 @@ a:hover {
 
 /* Hover effect for navigation links */
 nav a:hover {
-  color: #EE3E38;
+  color: #f9f7f7;
   font-weight: bold; /* Add bold font weight on hover */
 }
 /* Add this to your CSS file (styles1.css) */
@@ -742,40 +742,10 @@ nav a:hover {
             display: flex;
             align-items: center;
             justify-content: center;
-
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column; /* Stack header items vertically on small screens */
-    text-align: center; /* Center-align text in header */
+        }
+@media screen and (max-width : 600px)
+{
+  height: 1px;{
+    font-size : 30px;
   }
-
-  nav {
-    margin-top: 20px; /* Add space below the logo */
-  }
-
-  nav li {
-    display: block;
-    margin: 10px 0; /* Add vertical space between navigation links */
-  }
-
-  .title h1 {
-    margin-left: 0; /* Center-align main heading */
-  }
-
-  .book-card {
-    width: 100%; /* Make book cards take up the full width */
-  }
-}
-
-/* Media query for screens smaller than 480px (typical smartphones) */
-@media screen and (max-width: 480px) {
-  .page-title {
-    font-size: 40px; /* Adjust the font size for smaller screens */
-  }
-
-  .book-card {
-    width: 100%; /* Make book cards take up the full width */
-  }
-
-  
 }
