@@ -159,12 +159,13 @@ button[type="submit"]:hover {
   background-color: #C0392B;
 }
 
-/*Add responsive styles if needed */
+/* Add responsive styles if needed */
 @media screen and (max-width: 768px) {
   .request-container {
     padding: 10px;
   }
 }
+
 /* Animation for the About Us section */
 .about-us-container {
   display: flex;
@@ -458,12 +459,12 @@ html {
   background-color: #555;
 }
 
-@/*media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
   }
-}*/
+}
 
 /* Logo styles */
 .logo {
@@ -592,6 +593,11 @@ nav a:hover {
   color: #ffffff;
 }
 
+/* Apply the rest of your styles here */
+
+/* ... Your existing styles ... */
+
+
 .team-member {
   background-color: #fff;
   border-radius: 10px;
@@ -648,11 +654,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/* ... (Your existing styles) ... */
 
+/* Hover effect for navigation links */
 nav a:hover {
   color: #f9f7f7;
-  font-weight: bold; 
+  font-weight: bold; /* Add bold font weight on hover */
 }
+/* Add this to your CSS file (styles1.css) */
 .linkedin-button {
   display: inline-block;
   padding: 10px 20px;
@@ -740,4 +749,3 @@ nav a:hover {
     font-size : 30px;
   }
 }
-
