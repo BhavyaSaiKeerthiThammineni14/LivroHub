@@ -159,17 +159,10 @@ button[type="submit"]:hover {
   background-color: #C0392B;
 }
 
-/* Add responsive styles if needed */
-/*@media screen and (max-width: 768px) {
+/*Add responsive styles if needed */
+@media screen and (max-width: 768px) {
   .request-container {
     padding: 10px;
-  }
-} */
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
   }
 }
 /* Animation for the About Us section */
@@ -741,10 +734,10 @@ nav a:hover {
             align-items: center;
             justify-content: center;
         }
-/*@media screen and (max-width : 600px)
+@media screen and (max-width : 600px)
 {
   height: 1px;{
     font-size : 30px;
   }
 }
-*/
+
