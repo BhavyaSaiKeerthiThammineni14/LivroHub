@@ -160,12 +160,31 @@ button[type="submit"]:hover {
 }
 
 /* Add responsive styles if needed */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .request-container {
     padding: 10px;
   }
-}
+} */
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
 /* Animation for the About Us section */
 .about-us-container {
   display: flex;
@@ -459,12 +478,12 @@ html {
   background-color: #555;
 }
 
-@media screen and (max-width: 650px) {
+@/*media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
   }
-}
+}*/
 
 /* Logo styles */
 .logo {
@@ -593,11 +612,6 @@ nav a:hover {
   color: #ffffff;
 }
 
-/* Apply the rest of your styles here */
-
-/* ... Your existing styles ... */
-
-
 .team-member {
   background-color: #fff;
   border-radius: 10px;
@@ -654,14 +668,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* ... (Your existing styles) ... */
 
-/* Hover effect for navigation links */
 nav a:hover {
   color: #f9f7f7;
-  font-weight: bold; /* Add bold font weight on hover */
+  font-weight: bold; 
 }
-/* Add this to your CSS file (styles1.css) */
 .linkedin-button {
   display: inline-block;
   padding: 10px 20px;
@@ -743,9 +754,10 @@ nav a:hover {
             align-items: center;
             justify-content: center;
         }
-@media screen and (max-width : 600px)
+/*@media screen and (max-width : 600px)
 {
   height: 1px;{
     font-size : 30px;
   }
 }
+*/
