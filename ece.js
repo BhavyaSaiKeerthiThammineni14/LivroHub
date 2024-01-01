@@ -24,9 +24,8 @@ const books = [
 { title: "Antennas and Wave Propagation", author: "Harish", cover: "https://ptolemy.berkeley.edu/books/ls_cover_small.jpg", link: "https://drive.google.com/file/d/1wwo6KYrzpbaEWwvhTZkHWc4jGVUQ1T6y/view?usp=sharing"},
 { title: "Electro Magnetic Waves", author: "U.A.Bakshi", cover: "https://ptolemy.berkeley.edu/books/ls_cover_small.jpg", link: "https://drive.google.com/file/d/1vaQge0INcSV908rlTQDPkJ6p6jwqjJlt/view?usp=sharing"},
 ];
-
 // Function to display the search results
-function displayResultsECE(results) {
+function displayResults(results) {
   const catalogSection = document.getElementById('catalog');
   catalogSection.innerHTML = ''; // Clear previous results
 
@@ -39,45 +38,46 @@ function displayResultsECE(results) {
       const bookCard = document.createElement('div');
       bookCard.classList.add('book-card');
 
-      const coverImage = document.createElement('img');
-      coverImage.src = book.cover;
-      coverImage.classList.add('book-cover');
-      bookCard.appendChild(coverImage);
-
-      const titleElement = document.createElement('h3');
-      titleElement.textContent = book.title;
-      titleElement.classList.add('book-title');
-      bookCard.appendChild(titleElement);
-
-      const authorElement = document.createElement('p');
-      authorElement.textContent = `Author: ${book.author}`;
-      authorElement.classList.add('book-author');
-      bookCard.appendChild(authorElement);
-
-      const bookLink = document.createElement('a');
-      bookLink.href = book.link;
-      bookLink.textContent = 'View Book';
-      bookCard.appendChild(bookLink);
-
-      catalogSection.appendChild(bookCard);
-    });
+        const coverImage = document.createElement('img');
+        coverImage.src = book.cover;
+        coverImage.classList.add('book-cover');
+        bookCard.appendChild(coverImage);
+  
+        const titleElement = document.createElement('h3');
+        titleElement.textContent = book.title;
+        titleElement.classList.add('book-title');
+        bookCard.appendChild(titleElement);
+  
+        const authorElement = document.createElement('p');
+        authorElement.textContent = `Author: ${book.author}`;
+        authorElement.classList.add('book-author');
+        bookCard.appendChild(authorElement);
+  
+        const bookLink = document.createElement('a');
+        bookLink.href = book.link;
+        bookLink.textContent = 'View Book';
+        bookCard.appendChild(bookLink);
+  
+        catalogSection.appendChild(bookCard);
+      });
+    }
   }
-}
-
-// Function to handle the search
-function handleSearchECE(event) {
-  event.preventDefault(); // Prevent form submission to avoid page reload
-
-  const searchInput = document.getElementById('searchInput');
-  const searchTerm = searchInput.value.toLowerCase();
-
-  const results = booksECE.filter(book => {
-    return book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
-  });
-
-  displayResultsECE(results);
-}
-
-// Attach the handleSearch function to the form's submit event
-const searchForm = document.getElementById('searchForm');
-searchForm.addEventListener('submit', handleSearchECE);
+  
+  // Function to handle the search
+  function handleSearch(event) {
+    event.preventDefault(); // Prevent form submission to avoid page reload
+  
+    const searchInput = document.getElementById('searchInput');
+    const searchTerm = searchInput.value.toLowerCase();
+  
+    const results = books.filter(book => {
+      return book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
+    });
+  
+    displayResults(results);
+  }
+  
+  // Attach the handleSearch function to the form's submit event
+  const searchForm = document.getElementById('searchForm');
+  searchForm.addEventListener('submit', handleSearch);
+  
