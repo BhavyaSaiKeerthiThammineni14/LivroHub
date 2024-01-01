@@ -24,12 +24,9 @@ const books = [
 { title: "Antennas and Wave Propagation", author: "Harish", cover: "https://ptolemy.berkeley.edu/books/ls_cover_small.jpg", link: "https://drive.google.com/file/d/1wwo6KYrzpbaEWwvhTZkHWc4jGVUQ1T6y/view?usp=sharing"},
 { title: "Electro Magnetic Waves", author: "U.A.Bakshi", cover: "https://ptolemy.berkeley.edu/books/ls_cover_small.jpg", link: "https://drive.google.com/file/d/1vaQge0INcSV908rlTQDPkJ6p6jwqjJlt/view?usp=sharing"},
 ];
-const books = [
-  // ... (your book data here)
-];
 
 // Function to display the search results
-function displayResults(results) {
+function displayResultsECE(results) {
   const catalogSection = document.getElementById('catalog');
   catalogSection.innerHTML = ''; // Clear previous results
 
@@ -68,19 +65,19 @@ function displayResults(results) {
 }
 
 // Function to handle the search
-function handleSearch(event) {
+function handleSearchECE(event) {
   event.preventDefault(); // Prevent form submission to avoid page reload
 
   const searchInput = document.getElementById('searchInput');
   const searchTerm = searchInput.value.toLowerCase();
 
-  const results = books.filter(book => {
+  const results = booksECE.filter(book => {
     return book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
   });
 
-  displayResults(results);
+  displayResultsECE(results);
 }
 
 // Attach the handleSearch function to the form's submit event
 const searchForm = document.getElementById('searchForm');
-searchForm.addEventListener('submit', handleSearch);
+searchForm.addEventListener('submit', handleSearchECE);
