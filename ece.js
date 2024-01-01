@@ -24,6 +24,9 @@ const books = [
 { title: "Antennas and Wave Propagation", author: "Harish", cover: "https://ptolemy.berkeley.edu/books/ls_cover_small.jpg", link: "https://drive.google.com/file/d/1wwo6KYrzpbaEWwvhTZkHWc4jGVUQ1T6y/view?usp=sharing"},
 { title: "Electro Magnetic Waves", author: "U.A.Bakshi", cover: "https://ptolemy.berkeley.edu/books/ls_cover_small.jpg", link: "https://drive.google.com/file/d/1vaQge0INcSV908rlTQDPkJ6p6jwqjJlt/view?usp=sharing"},
 ];
+const books = [
+  // ... (your book data here)
+];
 
 // Function to display the search results
 function displayResults(results) {
@@ -50,7 +53,7 @@ function displayResults(results) {
       bookCard.appendChild(titleElement);
 
       const authorElement = document.createElement('p');
-      authorElement.textContent = Author: ${book.author};
+      authorElement.textContent = `Author: ${book.author}`;
       authorElement.classList.add('book-author');
       bookCard.appendChild(authorElement);
 
