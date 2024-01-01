@@ -8,7 +8,7 @@ const books = [
  title: " BEEE ", author: "R.K.Rajput", cover:"https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/798/9780071329798.jpg",link: "https://drive.google.com/drive/folders/1UMXlZ_0VyO6t3p-fcWd1oOCEBJ2l25Bf" },
  title: " Advanced Engineering ", author: "Muhammad Safi", cover:"https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/91ujM3A8gqL._AC_UF1000,1000_QL80_.jpg",link: "https://drive.google.com/drive/folders/1UMXlZ_0VyO6t3p-fcWd1oOCEBJ2l25Bf" },
  ];
-// Function to display the search results
+
 function displayResults(results) {
   const catalogSection = document.getElementById('catalog');
   catalogSection.innerHTML = ''; // Clear previous results
@@ -22,45 +22,46 @@ function displayResults(results) {
       const bookCard = document.createElement('div');
       bookCard.classList.add('book-card');
 
-      const coverImage = document.createElement('img');
-      coverImage.src = book.cover;
-      coverImage.classList.add('book-cover');
-      bookCard.appendChild(coverImage);
-
-      const titleElement = document.createElement('h3');
-      titleElement.textContent = book.title;
-      titleElement.classList.add('book-title');
-      bookCard.appendChild(titleElement);
-
-      const authorElement = document.createElement('p');
-      authorElement.textContent = `Author: ${book.author}`;
-      authorElement.classList.add('book-author');
-      bookCard.appendChild(authorElement);
-
-      const bookLink = document.createElement('a');
-      bookLink.href = book.link;
-      bookLink.textContent = 'View Book';
-      bookCard.appendChild(bookLink);
-
-      catalogSection.appendChild(bookCard);
-    });
+        const coverImage = document.createElement('img');
+        coverImage.src = book.cover;
+        coverImage.classList.add('book-cover');
+        bookCard.appendChild(coverImage);
+  
+        const titleElement = document.createElement('h3');
+        titleElement.textContent = book.title;
+        titleElement.classList.add('book-title');
+        bookCard.appendChild(titleElement);
+  
+        const authorElement = document.createElement('p');
+        authorElement.textContent = `Author: ${book.author}`;
+        authorElement.classList.add('book-author');
+        bookCard.appendChild(authorElement);
+  
+        const bookLink = document.createElement('a');
+        bookLink.href = book.link;
+        bookLink.textContent = 'View Book';
+        bookCard.appendChild(bookLink);
+  
+        catalogSection.appendChild(bookCard);
+      });
+    }
   }
-}
-
-// Function to handle the search
-function handleSearch(event) {
-  event.preventDefault(); // Prevent form submission to avoid page reload
-
-  const searchInput = document.getElementById('searchInput');
-  const searchTerm = searchInput.value.toLowerCase();
-
-  const results = books.filter(book => {
-    return book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
-  });
-
-  displayResults(results);
-}
-
-// Attach the handleSearch function to the form's submit event
-const searchForm = document.getElementById('searchForm');
-searchForm.addEventListener('submit', handleSearch);
+  
+  // Function to handle the search
+  function handleSearch(event) {
+    event.preventDefault(); // Prevent form submission to avoid page reload
+  
+    const searchInput = document.getElementById('searchInput');
+    const searchTerm = searchInput.value.toLowerCase();
+  
+    const results = books.filter(book => {
+      return book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
+    });
+  
+    displayResults(results);
+  }
+  
+  // Attach the handleSearch function to the form's submit event
+  const searchForm = document.getElementById('searchForm');
+  searchForm.addEventListener('submit', handleSearch);
+  
