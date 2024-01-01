@@ -9,7 +9,8 @@ const books = [
 	{title: "Highway Engineering", author: "S.K.Khanna", cover: "https://rukminim2.flixcart.com/image/850/1000/xif0q/regionalbooks/l/v/d/highway-engineering-original-imagzxtfuz6wagp7.jpeg?q=90", link: "https://drive.google.com/file/d/1zl6cPY2w5lQEUDoe3SR3ff-1a5bRBZpR/view?usp=sharing" },
   // Add more book objects as needed
 ];
- Function to display the search results
+
+// Function to display the search results
 function displayResults(results) {
   const catalogSection = document.getElementById('catalog');
   catalogSection.innerHTML = ''; // Clear previous results
@@ -23,45 +24,46 @@ function displayResults(results) {
       const bookCard = document.createElement('div');
       bookCard.classList.add('book-card');
 
-      const coverImage = document.createElement('img');
-      coverImage.src = book.cover;
-      coverImage.classList.add('book-cover');
-      bookCard.appendChild(coverImage);
-
-      const titleElement = document.createElement('h3');
-      titleElement.textContent = book.title;
-      titleElement.classList.add('book-title');
-      bookCard.appendChild(titleElement);
-
-      const authorElement = document.createElement('p');
-      authorElement.textContent = `Author: ${book.author}`;
-      authorElement.classList.add('book-author');
-      bookCard.appendChild(authorElement);
-
-      const bookLink = document.createElement('a');
-      bookLink.href = book.link;
-      bookLink.textContent = 'View Book';
-      bookCard.appendChild(bookLink);
-
-      catalogSection.appendChild(bookCard);
-    });
+        const coverImage = document.createElement('img');
+        coverImage.src = book.cover;
+        coverImage.classList.add('book-cover');
+        bookCard.appendChild(coverImage);
+  
+        const titleElement = document.createElement('h3');
+        titleElement.textContent = book.title;
+        titleElement.classList.add('book-title');
+        bookCard.appendChild(titleElement);
+  
+        const authorElement = document.createElement('p');
+        authorElement.textContent = `Author: ${book.author}`;
+        authorElement.classList.add('book-author');
+        bookCard.appendChild(authorElement);
+  
+        const bookLink = document.createElement('a');
+        bookLink.href = book.link;
+        bookLink.textContent = 'View Book';
+        bookCard.appendChild(bookLink);
+  
+        catalogSection.appendChild(bookCard);
+      });
+    }
   }
-}
-
-// Function to handle the search
-function handleSearch(event) {
-  event.preventDefault(); // Prevent form submission to avoid page reload
-
-  const searchInput = document.getElementById('searchInput');
-  const searchTerm = searchInput.value.toLowerCase();
-
-  const results = books.filter(book => {
-    return book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
-  });
-
-  displayResults(results);
-}
-
-// Attach the handleSearch function to the form's submit event
-const searchForm = document.getElementById('searchForm');
-searchForm.addEventListener('submit', handleSearch);
+  
+  // Function to handle the search
+  function handleSearch(event) {
+    event.preventDefault(); // Prevent form submission to avoid page reload
+  
+    const searchInput = document.getElementById('searchInput');
+    const searchTerm = searchInput.value.toLowerCase();
+  
+    const results = books.filter(book => {
+      return book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
+    });
+  
+    displayResults(results);
+  }
+  
+  // Attach the handleSearch function to the form's submit event
+  const searchForm = document.getElementById('searchForm');
+  searchForm.addEventListener('submit', handleSearch);
+  
