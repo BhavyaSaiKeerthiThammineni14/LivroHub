@@ -798,6 +798,12 @@ h1 {
     font : "calibri";
     line-height: 1.0;
     }
+      .about-us-image img {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 }
 
 @media screen and (max-width: 600px) {
