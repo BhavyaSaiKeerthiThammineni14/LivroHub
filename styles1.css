@@ -793,6 +793,11 @@ h1 {
     .logo {
         margin-bottom: 10px;
     }
+    .about-us-text{
+        font-size: 10px;
+    font : "calibri";
+    line-height: 1.0;
+    }
 }
 
 @media screen and (max-width: 600px) {
