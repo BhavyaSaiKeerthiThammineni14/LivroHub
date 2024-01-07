@@ -849,7 +849,16 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-    .department-label{
-        align:"center";
-    }
+.department-label {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #EE3E38;
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+}
+
 }
