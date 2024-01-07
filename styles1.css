@@ -830,12 +830,14 @@ h1 {
         font-size: 30px;
     }
      .about-us-text{
+         align:"center";
         font-size: 10px;
     font : "calibri";
     line-height: 1.0;
     }
    .about-us-image img {
     max-width: 150px;
+    align:"center";
     height: 150px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
