@@ -1,4 +1,4 @@
-const books = [
+export const otherBooks = [
   { title: "NUMERICAL METHODS IN ENGINEERING AND SCIENCE", author: "B S Grewal", cover: "https://www.booksb2bportal.com/covers/31/9781683921288_L.jpg", link: "https://drive.google.com/file/d/1827srEtOR1ciLqdSLTGqUnn4AM2gYcOY/view?usp=sharing"},
   {title: " Higher Engneering ", author: "B. S. Grewal", cover:"https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/617pWj4VBvL._AC_UF1000,1000_QL80_.jpg",link:"https://drive.google.com/drive/folders/1UMXlZ_0VyO6t3p-fcWd1oOCEBJ2l25Bf"},
   {title: "Engineering Physics ", author: "Ajay Kumar Singh", cover:"https://library.iitd.ac.in/sites/default/files/2022-06/Engineering%20physics-Hitendra%20K%20Malik%20and%20Ajay%20Kumar%20Singh-2010.jpg ",link:"https://drive.google.com/drive/folders/1UMXlZ_0VyO6t3p-fcWd1oOCEBJ2l25Bf"},
