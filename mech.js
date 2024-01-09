@@ -1,4 +1,4 @@
-const books = [
+export const mechBooks = [
    { title: "Engineering Drawing", author: "N.D.Bhatt", cover: "https://images-eu.ssl-images-amazon.com/images/I/91pcwzxkGYL._AC_UL600_SR600,600_.jpg", link: "https://drive.google.com/file/d/1JZhNed8pljGbP4wjKJ0h3-4ma3Anecu1/view?usp=sharing" },
   
     { title: "Adaptive Control Systems", author: "Karl J.Astrom", cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1173807971i/330998._UX160_.jpg", link: "https://drive.google.com/file/d/1ZEncmPPe_1F1Qpc61azS82F2s3SwdHFf/view?usp=sharing" },
