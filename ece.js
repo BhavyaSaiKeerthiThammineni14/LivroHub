@@ -1,4 +1,4 @@
-const books = [
+export const eceBooks = [
 { title: "Embedded Systems", author: "Baerkley", cover: "https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/I/61mKuXw-FjL._AC_UL600_SR600,600_.jpg", link: "https://ptolemy.berkeley.edu/books/leeseshia/releases/LeeSeshia_DigitalV2_2.pdf"},
 { title: "8051 Micro Controller", author: "Subhrata Goshal", cover: "https://images-eu.ssl-images-amazon.com/images/I/519mQZy0lbL._AC_UL600_SR600,600_.jpg", link: "https://drive.google.com/file/d/1x0ml0qc7N4tJCFfOVWmZmLSLiJ3jUYTY/view?usp=sharing"},
 { title: "8086 Micro Processor", author: "Baerkley", cover: "https://imgv2-2-f.scribdassets.com/img/document/653697887/original/5baec17dac/1701525985?v=1", link: "https://drive.google.com/file/d/1wWFQDZBdHnpkTECyqMDjq03sdAFmQQO8/view?usp=sharing"},
