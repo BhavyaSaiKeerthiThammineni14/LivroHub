@@ -1,4 +1,4 @@
-const books = [
+export const eeeBooks = [
   {
     title: "BEEE",
     author: "V.Hima Bindu",
