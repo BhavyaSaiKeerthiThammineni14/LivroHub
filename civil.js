@@ -1,4 +1,4 @@
-const books = [
+export const civilBooks = [
  
  { title: " Engineering Mechanics", author: "Irving H. Shames", cover:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKqx_rY63y0vJKJJ6eT3Z2Na61H1c9gnGqPqgGXdhFVqPiLHC-HXihNXRlsS99cpmyslo&usqp=CAU", link: "https://drive.google.com/file/d/1J91nzPs_NBT9qR4kcQcd7DfkwdMjcHby/view?usp=sharing" },
   { title: "Geotechnical Engineering", author: "C.Venkata Ramayya", cover:"https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71bhKFUPJpL._AC_UF1000,1000_QL80_.jpg", link: "https://drive.google.com/file/d/1HAh8WaUrUxjplE2UgSUuBtZT-0ZqXBxL/view?usp=sharing" },
