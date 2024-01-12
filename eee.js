@@ -20,7 +20,7 @@ const books = [
   {
     title: "Linear Integrated Circuit",
     author: "D. Roy Choudhar",
-     cover: "https://pragationline.com/wp-content/uploads/2021/03/LINEAR-INTEGRATED-CIRCUITS-D.-ROY-CHOUDHURY-SHAIL-BALA-JAIN-New-Age-001.jpg",
+     cover: "https://5.imimg.com/data5/SELLER/Default/2021/5/AS/VN/UU/59907886/whatsapp-image-2021-04-27-at-5-15-22-pm-500x500.jpeg",
    link: "https://drive.google.com/file/d/1AzC6Bwl55vFCaBW27dCYiFgXZaseZC9M/view?usp=sharing"
   },
   {
