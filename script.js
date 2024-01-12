@@ -52,9 +52,10 @@ const books = [
 
 ];
 
+// Function to display the search results
 function displayResults(results) {
   const catalogSection = document.getElementById('catalog');
-  catalogSection.innerHTML = '';
+  catalogSection.innerHTML = ''; // Clear previous results
 
   if (results.length === 0) {
     const noResultsMessage = document.createElement('p');
@@ -89,22 +90,32 @@ function displayResults(results) {
     });
   }
 }
-
 function handleSearch(event) {
-  event.preventDefault();
+  event.preventDefault(); // Prevent form submission to avoid page reload
 
   const searchInput = document.getElementById('searchInput');
-  const searchTerm = searchInput.value.toLowerCase();
+  const searchTerm = searchInput.value.trim().toLowerCase(); // Trim whitespace and convert to lowercase
+
+  console.log('Search Term:', searchTerm);
 
   const results = books.filter(book => {
-    return book.title.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
+    const lowerTitle = (book.title || '').toLowerCase(); // Check if title is defined
+    const lowerAuthor = (book.author || '').toLowerCase(); // Check if author is defined
+
+    console.log('Lower Title:', lowerTitle);
+    console.log('Lower Author:', lowerAuthor);
+
+    return lowerTitle.includes(searchTerm) || lowerAuthor.includes(searchTerm);
   });
 
   displayResults(results);
 }
 
+
+// Attach the handleSearch function to the form's submit event
 const searchForm = document.getElementById('searchForm');
 searchForm.addEventListener('submit', handleSearch);
+
 
 const feedbackIcons = document.querySelectorAll('.feedback-icon');
 feedbackIcons.forEach(icon => {
