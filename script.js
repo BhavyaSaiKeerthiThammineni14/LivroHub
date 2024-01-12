@@ -1,11 +1,9 @@
-import { eeeBooks } from 'eee.js';
-import { mechBooks } from './mech.js';
-import { eceBooks } from './ece.js';
-import { cseBooks } from './cse.js';
-import { otherBooks } from './Other.js';
-import { civilBooks } from './civil.js';
+const books = [
+  { title: "BEEE", author: "V.Hima Bindu", cover: "https://i0.wp.com/easyengineering.net/wp-content/uploads/2020/05/BE8251-Basic-Electrical-and-Electronics-Engineering.jpg?fit=411%2C550&ssl=1", link: "https://www.griet.ac.in/nodes/BEEE.pdf" },
+  { title: "Fluid Mechanics", author: "Frank M.White", cover: "https://0.academia-photos.com/attachment_thumbnails/92746734/mini_magick20221020-1-1o6rcrj.png?1666275372", link: "https://warwick.ac.uk/fac/sci/eng/staff/ymc/members/former/azimi/project/references/white_frank_m._-_fluid_mechanics_4th_ed_mcgraw_hill.pdf" },
+  // ... (other book entries)
+];
 
-const allBooks = [...eeeBooks , ...mechBooks , ...eceBooks , ...cseBooks, ...otherBooks, ...civilBooks ];
 function displayResults(results) {
   const catalogSection = document.getElementById('catalog');
   catalogSection.innerHTML = '';
