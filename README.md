@@ -20,7 +20,7 @@ Livro Hub is a web application designed to empower undergraduate students by pro
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/bhavyasaikeerthithammineni14/livro-hub.git
+   git clone https://github.com/BhavyaSaiKeerthiThammineni14/livro-hub.git
    ```
 2. **Run the Application:**
   
